@@ -1,0 +1,4 @@
+[debug] [my-service-build-build] Classpath dependencies List()
+[debug] [my-service-build-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'my-service-build-build' to '/home/millerj/git/aws-test/my-service/project/project/.bloop/my-service-build-build.json'
+[success] Generated .bloop/my-service-build-build.json

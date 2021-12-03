@@ -1,0 +1,3 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/home/millerj/git/aws-test/my-service/"), "my-service")...
+[debug] Done updating ProjectRef(uri("file:/home/millerj/git/aws-test/my-service/"), "my-service")
