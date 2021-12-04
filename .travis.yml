@@ -16,4 +16,4 @@ install:
 script:
   - sbt assembly
 after_script:
-  - serverless deploy -v
+  - serverless deploy --verbose
