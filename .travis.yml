@@ -1,19 +1,20 @@
 language:
-  - scala
-# jdk:
-#   - openjdk8
+- scala
 scala:
-  - 2.13.1
-branches:
+- 2.13.1
+branches: 
 only:
-  - master
+- master
 before_install:
-  - nvm install node
-  - node --version
-  - npm --version
+- nvm install node
+- node --version
+- npm --version
 install:
-  - npm install -g serverless
+- npm install -g serverless
 script:
-  - sbt assembly
+- sbt assembly
 after_script:
-  - serverless deploy --verbose
+- serverless deploy --verbose
+env:
+  global:
+    secure: qArbX05aWAY24Iy8SemrNTJT34Yg+FD2U6fCvpbKYlDuZmfwNlbhUmhir9IJHp+opLagarbu5hsYz4Nhq7Y5VZAY6/p90nMp6Qd4W9NQOLJQSUxUH8pWeOH/zPTrNRXseTEr184dize9QhhhxcmkmC7Hg9ws/i38BmSaV5RMubnbTWTJh6u3X71rvSy9ms4JpOapt/T9qbK3ceBr6ier+CJvglbSqgHsp3+ZsE8Uejh0SVC3LEbS1FEju0FNRqMJEIRGTAUS28XRYZHQGMc8eKa4m0AKPYUyTnut87tBYAIZpOqHAN6xm9ZvALRzsttbXatimgVsEeW6m8Klgf0FmZ+wYLeOAre93pilRjc1V2LaSstU/iSoTqwus9JoyYlw5cZhs+lbMoIbTBjCK5DKOeNLY89WZOvJX8Q2bNPN4O8c5Am+Z+0foTK46Ccf9JZ3YhTHIM0+R87KQzQU49mNDsEfBbXovtU2y1iT6cnN9n+1oPgMVSByt31L70Ye1/2fLYPm+i0dN+eiYKCvSVwSgTokdDyB+WmexZ8B6xRpD6VDdgzrK0kFvq5lAgnDFvvYHnFnSbIwkpFDgCfS+ZmWnowubrSjesnGyDq/upMZckImPOPdLEUhpz3XJQPT5OYkDB+vre1RsYrBgwkOt6+PgUZ6tw6tNwRs2ATca4lJkcQ=
