@@ -116,6 +116,7 @@ provider:
   name: aws
   runtime: java8
   lambdaHashingVersion: 20201221
+  region: eu-west-2
 package:
   artifact: target/scala-2.13/hello.jar
 functions:
