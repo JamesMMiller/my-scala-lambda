@@ -12,12 +12,9 @@ jobs:
     environment: dev
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 17.9.0
-      uses: actions/setup-node@v3
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-    - run: npm install
     - run: npm ci --deploy
     - name: serverless deploy
       uses: serverless/github-action@v3.1
