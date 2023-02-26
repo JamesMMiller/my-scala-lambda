@@ -4,7 +4,7 @@ import sbtrelease.Version
 name := "hello"
 
 resolvers += Resolver.sonatypeRepo("public")
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.10"
 releaseNextVersion := { ver =>
   Version(ver).map(_.bumpMinor.string).getOrElse("Error")
 }

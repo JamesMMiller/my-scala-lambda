@@ -1,4 +1,4 @@
-name: Deploy master branch
+name: Deploy main branch
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
     environment: dev
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js 16.14.2
+    - name: Use Node.js 17.9.0
       uses: actions/setup-node@v3
       with:
-        node-version: 16.14.2
+        node-version: 17.9.0
     - run: npm ci
     - name: serverless deploy
       uses: serverless/github-action@v3.1
